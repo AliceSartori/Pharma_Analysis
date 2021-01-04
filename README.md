@@ -1,5 +1,13 @@
 # Matplotlib Homework - Pymaceuticals
 
+
+## Insights: 
+Combining the two csv data sets through an inner merge, I found duplicate rows with the same Mouse ID and Timepoints. Each mouse should only have a single row per time point. The duplicates timepoints I decided to drop were most probably associated with human error or the instrument taking the same value twice.
+Looking at the summary statistics, Capomulin and Ramicane are the two drugs in the study showing the most promising values. The same observation can be made in the bar chart, where the number of measurements for the above-mentioned drugs is greater than the others, meaning the mice died at a later date).
+This also can be easily observed by plotting the data using a boxplot. 
+Analyzing 4 mice data only, Catamulin seems to show a clear path of success in the drug trial: as the trial progresses, the tumor volume values significantly lower in all cases in the exam.
+Lastly, the correlation between mouse weight and Average tumor volume is 0.84. This is a strong positive correlation, which means that weight plays a role: the volume of the tumor increases linearly with the increase of the weight of the mouse.
+
 ## Background
 
 While your data companions rushed off to jobs in finance and government, you remained adamant that science was the way for you. Staying true to your mission, you've joined Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
